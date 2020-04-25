@@ -1,7 +1,7 @@
 class ParkingLot {
     
     constructor(){
-        this.Lot = new Array(100);
+        this.Lot = [];
     }
 
     doParking = (car) => { 
@@ -21,7 +21,6 @@ class ParkingLot {
         return false;
     }
     
-
 }
  
 module.exports = new ParkingLot;
