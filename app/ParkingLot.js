@@ -18,7 +18,7 @@ class ParkingLot {
             this.Lot.pop(car)
             return true;
         }
-        
+        return false;
     }
     
 

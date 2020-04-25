@@ -17,10 +17,17 @@ it(`dont allow parking if already parked`, () =>{
     assert.isFalse(result)
  })
 
-//TC2.1 let the driver unpark so he can go home
+//TC 2.1 let the driver unpark so he can go home
 it(`allow unparking so the driver can home`, () => {
     let result = parkingLot.doUnpark(car)
     assert.isTrue(result)
 })
+
+//TC 2.2 if the car is already unparked system should not allow to unpark again
+it(`dont allow unparking if already unparked`, () => {
+    let result = parkingLot.doUnpark(car)
+    assert.isFalse(result)
+})
+
 
 })
