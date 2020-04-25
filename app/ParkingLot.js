@@ -5,8 +5,11 @@ class ParkingLot {
     }
 
     doParking = (car) => { 
+        if(this.Lot.includes(car))
+        {
+            return false;
+        }
         this.Lot.push(car)
-
         return true;
     }
 
