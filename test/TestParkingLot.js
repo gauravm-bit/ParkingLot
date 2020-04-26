@@ -29,5 +29,11 @@ it(`dont allow unparking if already unparked`, () => {
     assert.isFalse(result)
 })
 
+//TC 3.1 give status of parking lot if it is full 
+it(`put out full sign if the lot is full`, () => {
+    let result = parkingLot.checkStatusIfFull()
+    assert.isFalse(result)
+})
+
 
 })
